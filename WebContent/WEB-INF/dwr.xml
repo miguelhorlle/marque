@@ -1,0 +1,15 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 1.0//EN"
+    "http://www.getahead.ltd.uk/dwr/dwr10.dtd">
+
+<dwr>
+       <allow>
+               <create creator="new" scope="session" javascript="CidadesDAO">
+                       <param name="class" value="com.marquesexo.dao.CidadesDAO" />
+               </create>
+               <create creator="new" scope="session" javascript="ControladorAjax">
+                       <param name="class" value="com.marquesexo.web.ControladorAjax" />
+               </create>
+               <convert converter="bean" match="com.marquesexo.bean.*"/>
+       </allow>
+</dwr>

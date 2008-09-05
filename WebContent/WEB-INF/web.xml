@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>MarqueSexo</display-name>
+	
+	<context-param>
+		<param-name>sessionTimeout</param-name>
+		<!-- Add time in minutes after which user's session will be expired.
+		If user doesn't make any request after provided minutes he will be automatically logged out.
+		Default is 30 minutes.
+
+		-->
+		<param-value>2</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>refreshAfter</param-name>
+		<!-- Add time in seconds after which user's browser window will automatically refresh to display
+		new messages.
+		Default is 10 seconds.
+		-->
+		<param-value>10</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>maxNoOfMessages</param-name>
+		<!--  Maximum Number of messages that are stored in a list which is used to store all messages
+		in a room. After this limit is reached older messages are removed.
+		Default is 25
+		-->		
+		<param-value>25</param-value>
+	</context-param>
+	
+	<servlet>
+     <servlet-name>dwr-invoker</servlet-name>
+     <servlet-class>uk.ltd.getahead.dwr.DWRServlet</servlet-class>
+     <init-param>
+             <param-name>debug</param-name>
+             <param-value>true</param-value>
+     </init-param>
+   </servlet>
+	
+	<listener>
+		<listener-class>com.marquesexo.chat.SessionListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>marque</servlet-name>
+		<servlet-class>com.marquesexo.web.MarqueSexoServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>manageChat</servlet-name>
+		<servlet-class>com.marquesexo.web.ManageChatServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>fotos</servlet-name>
+		<servlet-class>com.marquesexo.web.FotoServlet</servlet-class>
+	</servlet>
+	
+   <servlet-mapping>
+   	  <servlet-name>dwr-invoker</servlet-name>
+   	  <url-pattern>/dwr/*</url-pattern>
+   </servlet-mapping>
+  
+	<servlet-mapping>
+		<servlet-name>manageChat</servlet-name>
+		<url-pattern>/manageChat</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>manageChat</servlet-name>
+		<url-pattern>/chat</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>manageChat</servlet-name>
+		<url-pattern>/clean</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>fotos</servlet-name>
+		<url-pattern>/foto</url-pattern>
+	</servlet-mapping>
+		
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarcadastro</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarcadastromotel</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/resultadobusca</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarfaleconosco</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/bloqueados</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/interessantes</url-pattern>
+	</servlet-mapping>
+	
+		
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviaresqueciminhasenha</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/onde</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/moteis</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/perfil</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/perfilsimples</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/fotos</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/editarfotos</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/editar</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviareditar</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/editarm</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviareditarm</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/editarmotel</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviareditarmotel</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/atualizarfoto</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/brancofoto</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/excluirmotel</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/excluirm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/adicionarinteressante</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/adicionarbloqueado</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/excluirinteressante</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/excluirbloqueado</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/mensagem</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarmensagem</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/sala</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/online</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/desabilitarwebcam</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/habilitarwebcam</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/configurarwebcam</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/atualizarwebcam</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviararquivo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarlink</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/japeguei</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/verjapegou</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/verificarjapeguei</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarjapeguei</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarcomentariojapeguei</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/confirmarjapegou</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/desmentirjapegou</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/definirparticipantes</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/definirquemparticipou</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/definirparticipantes</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/minhassurubas</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/resultadobuscasurubasdisponiveis</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/resultadobuscasurubasfinalizadas</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/versuruba</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/editarsuruba</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviareditarsuruba</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/organizarsuruba</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarorganizarsuruba</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/participarsuruba</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarconfirmarparticipacao</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/comentarsuruba</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarcomentariosuruba</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviardesistirsuruba</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviaraceitarparticipantesuruba</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarrecusarparticipantesuruba</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarparticipantefoisuruba</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarparticipantenaofoisuruba</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/cancelarsuruba</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarcancelarsuruba</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/surubasparticipou</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/surubasquisparticipar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/surubasconfirmadas</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/verenquetes</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/verresultadoenquete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/enviarvotoenquete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/votarenquete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/cancelarconta</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/sair</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/main</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>marque</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>main.jsp</welcome-file>
+	</welcome-file-list>	
+	
+	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/erro.jsp</location>
+	</error-page>
+	
+</web-app>

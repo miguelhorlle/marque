@@ -1,0 +1,799 @@
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+background-color:#000;
+font-family:Tahoma, Arial;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+#maincontainer{ /*tudo*/
+width: 778px; 
+height: 100%;
+margin: 0 auto; /*centra a página*/
+background-color:#000;
+color:#FFFFFF;
+border:1px solid #000;
+}
+
+#topo{
+height: 128px; 
+width:778px;
+border:1px solid #000;
+}
+
+#topomenu{
+	float: right;
+	position:relative;
+	height: 71px;
+	width:510px;
+	clear: none;
+	margin-top:-116px;
+}
+
+
+#topoLogo h1{
+border:1px solid #000;
+color:#f00;
+margin: 0;
+padding-top: 0px;
+}
+
+#loginApos{
+  float:left;
+  position:relative;
+  width:157px;
+  height:36px;
+  padding:12px;
+  font-size:75%;
+  margin-left:135px;
+  margin-top:-90px;
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+background-color:#000000;
+}
+
+#contentcolumn{
+margin-right: 324px; 
+height:auto;
+}
+
+#rightcolumn{
+float: left;
+width: 324px; 
+height:434px;
+margin-left: -324px;
+margin-top:-125px;
+background-color:#000000;
+}
+
+#rightcolumnMenu{
+float: left;
+width: 324px; 
+height:433px;
+margin-left: -324px; 
+margin-top:-40px;
+background-color:#000000;
+}
+
+#footer{
+position:relative;
+clear: left;
+width: 453px;
+height:44px;
+background-image:url(img/fundo_menu_principal.jpg);
+background-repeat:repeat-x;
+text-align: center;
+padding:0;
+margin-left:15px;
+margin-top:26px;
+}
+
+#footer h1{
+color: #000;
+padding-top:5px;
+font-size:12px;
+font-style:normal;
+font-weight:bold;
+}
+
+.menuprinc{
+padding-top:14px;
+color: #000;
+font-size:13px;
+font-style:normal;
+font-weight:bold;
+text-align:left;
+padding-left:15px;
+}
+
+.menuprinc h1{
+font-size:34px;
+}
+.logo{
+margin: 10px 15px 15px;
+width:100px;
+}
+
+.login{
+position:relative;
+float:left;
+width:209px;
+height:123px;
+background-image:url(img/fundo_login_inteiro.jpg);
+margin-top:-110px;
+left:220px;
+}
+
+.classh1{
+float:left;
+font-size:11px;
+font-weight:bold;
+color:#000;
+padding-left:10px;
+}
+
+
+.login h2{
+float:left;
+margin-top:0;
+margin-left:8px;
+font-size:11px;
+font-weight:bold;
+color:#fff;
+}
+
+.login h3{
+float:left;
+margin-top:0;
+margin-left:8px;
+padding-top:-10px;
+font-size:11px;
+font-weight:bold;
+color:#fff;
+}
+
+.TextBox1{
+float:left;
+width:139px;
+height:auto;
+border:1px solid #666;
+background-color:#e8e8e8;
+margin-top::2px;
+margin-left:5px;
+padding:1px;
+font-size:11px;
+color:#333;
+}
+
+.TextBox2{ /* campos do form fale conosco*/
+float:left;
+width:335px;
+height:auto;
+border:1px solid #fff;
+background-color:#9e9e9e;
+padding:2px;
+font-size:11px;
+color:#000000;
+}
+
+.TextBox3{ 
+float:left;
+position:relative;
+height:auto;
+border:1px solid #fff;
+background-color:#9e9e9e;
+padding:3px;
+margin-left:4px;
+margin-right:4px;
+font-size:78%;
+color:#000000;
+}
+
+.TableLogin{
+margin-top:12px;
+}
+
+
+.texto{
+font-size:11px;
+margin:10px;
+padding-left:5px;
+}
+
+.MsgCadastro{
+font-size:78%;
+color:#cc6666;
+padding-left:0px;
+}
+
+.MsgCadastro2{
+font-size:85%;
+color:#cc6666;
+padding-left:0px;
+top:-20px;
+}
+#BotaoOpcao{
+width:auto;
+height:auto;
+padding:3px;
+font-size:78%;
+font-weight:normal;
+color:#FFF;
+}
+
+
+.TextoMostraResult
+{
+font-size:100%;
+font-weight:normal;
+color:#cc6666;
+padding-left:2px;
+}
+
+#divCxMenuPerfil
+{
+	position:absolute;
+	float:left;
+	width:134px;
+	height:108px;
+	padding:10px;
+	background-color:#e5e0e0;
+	color:#333;
+	left: 1px;
+	top: 157px;
+	font-size:78%;
+}
+
+#divTexto2{
+margin:10px;
+padding-top: 10px;
+padding-left:5px;
+text-align:left;
+font-size:12px;
+}
+
+#divTexto2 p {
+padding-left:0;
+text-align:left;
+font-size:14px;
+font-weight:bold;
+color:#cc6666;
+height:auto;
+}
+
+#divTexto2 a:link{
+color: #fff;
+text-decoration:none;
+}
+
+#divTexto2 a:visited{
+color: #cc6666;
+text-decoration:none;
+}
+
+#divTexto2 a:hover{
+color: #cc6666;
+text-decoration:underline;
+}
+
+#divTexto2 a:active{
+color: #cc6666;
+text-decoration:none;
+}
+
+
+#divTexto{
+margin:10px;
+padding-top: 10px;
+padding-left:5px;
+text-align:left;
+font-size:12px;
+}
+
+#divTexto p {
+padding-left:0;
+text-align:left;
+font-size:14px;
+font-weight:bold;
+color:#cc6666;
+height:auto;
+}
+
+.LinksLogin {
+color: #FFFFFF;
+
+}
+a.LinksLogin:link {text-decoration:none}
+a.LinksLogin:visited {text-decoration:none; color:#fff}
+a.LinksLogin:hover {text-decoration:underline}
+a.LinkLogin:active {text-decoration:none}
+
+
+.LinksMenuHome {
+color: #000;
+
+}
+a.LinksMenuHome:link {text-decoration:none}
+a.LinksMenuHome:visited {text-decoration:none; color:#000}
+a.LinksMenuHome:hover {text-decoration:underline}
+a.LinkMenuHome:active {text-decoration:none}
+
+
+.LinksBranco {
+color: #fff;
+
+}
+a.LinksBranco:link {text-decoration:none}
+a.LinksBranco:visited {text-decoration:none; color:#fff}
+a.LinksBranco:hover {text-decoration:underline}
+a.LinkBranco:active {text-decoration:none}
+
+.LinkTextoHome {
+color: #cc6666;
+
+}
+a.LinksLogin:link {text-decoration:none}
+a.LinksLogin:visited {text-decoration:none; color:#cc6666}
+a.LinksLogin:hover {text-decoration:underline}
+a.LinkLogin:active {text-decoration:none}
+
+
+
+
+.style3 {font-size: 24px}
+.style4 {
+	font-size: 18px;
+	color: #cc0000;
+}
+.style5 {font-size: 18px}
+
+.TextoTitulo{
+margin:10px 1px 13px 5px;
+padding-top: 5px;
+padding-left:10px;
+text-align:left;
+font-size:90%;
+font-weight:bold;
+}
+.TextoCaixa{
+margin:15px;
+text-align:left;
+font-size:78%;
+color:#FFFFFF;
+font-weight:bold;
+}
+
+.TextoCaixa2{
+margin:15px;
+text-align:left;
+font-size:100%;
+color:#FFFFFF;
+font-weight:bold;
+}
+
+
+#divCxInteressante{
+ width:378px;
+ height:145px;
+ padding:10px;
+ margin:10px;
+ position:relative;
+ background-color:#e5e0e0;
+ color:#333;
+}
+
+#divCxInteressante2{
+ width:378px;
+ height:165px;
+ padding:10px;
+ margin:10px;
+ position:relative;
+ background-color:#e5e0e0;
+ color:#333;
+}
+
+#divCxResult{
+ width:378px;
+ height:auto;
+ padding:20px;
+ margin:10px;
+ position:relative;
+ 
+}
+
+#divCxResultPerfil{
+ width:378px;
+ height:auto;
+ padding:20px 10px 20px 0;
+ margin:10px;
+ position:relative;
+}
+#divDadosResultBuscaPerfil{
+ position:relative;
+ float:right;
+ padding-left:0px;
+ padding-right:-50px;
+ width:200px;
+ font-size:80%;
+ }
+ 
+#divDadosQuemPegou{
+ position:relative;
+ float:left;
+ padding-left:30px;
+ padding-right:0px;
+ width:auto;
+ font-size:75%;
+ }
+#divFotosAlbum{
+width:85px;
+height:113px;
+border:2px solid #FFFFFF;
+float:left;
+position:relative;
+text-align:center;
+margin-left:10px;
+}
+
+
+#divCxFoto{
+width:85px;
+height:113px;
+border:2px solid #FFFFFF;
+float:left;
+position:relative;
+text-align:center;
+margin-left:3px;
+}
+
+#divCxFoto2{
+width:85px;
+height:113px;
+border:2px solid #FFFFFF;
+float:left;
+position:relative;
+text-align:center;
+margin-left:50px;
+}
+
+
+#divDadosResultBusca{
+ position:relative;
+ float:left;
+ padding-left:15px;
+ padding-right:15px;
+ font-size:100%;
+ }
+
+#divDadosInteressante{
+ position:relative;
+ float:left;
+ padding:0;
+ font-size:78%;
+ width:100%;
+} 
+
+#divBotao{
+position:relative;
+float:left;
+width:auto;
+}
+
+
+ 
+.FundoFale{
+position:relative;
+float:left;
+width:425px;
+height:205px;
+background-image:url(img/fundo_faleconosco.jpg);
+background-repeat:repeat-x;
+padding:15px;
+margin-top:0;
+}
+
+.FundoCadastro{
+	position:relative;
+	float:left;
+	width:425px;
+	height:auto;
+	background-repeat:repeat-x;
+	padding:0px 15px 15px 10px;
+	margin-top:0;
+	margin-left: 15px;
+	background-image: url(img/fundo_faleconosco.jpg);
+}
+
+
+#FundoResultado{
+	position:relative;
+	float:left;
+	width:425px;
+	height:auto;
+	background-repeat:repeat-x;
+	padding:0px 15px 15px 10px;
+	margin-top:0;
+	margin-left: 15px;
+	font-size:78%;
+	background-image: url(img/fundo_faleconosco.jpg);
+}
+
+#FundoResultado a:link{
+color: #fff;
+text-decoration:none;
+}
+
+#FundoResultado a:visited{
+color: #cc6666;
+text-decoration:none;
+}
+
+#FundoResultado a:hover{
+color: #cc6666;
+text-decoration:underline;
+}
+
+#FundoResultado a:active{
+color: #cc6666;
+text-decoration:none;
+}
+
+/*botão opçao*/
+#BotaoCadastroOn{
+position:relative;
+float:left;
+margin-left:10px;
+margin-top:0;
+width:auto;
+height:auto;
+padding:3px;
+font-size:78%;
+font-weight:normal;
+color:#FFF;
+}
+
+.BtOpConteudo{
+
+background:url(img/botao/bt_op_meio.jpg) repeat-x;
+padding-left: 5px;
+height: 33px;
+width:90px;
+}
+
+.BtOpConteudo{
+	position:relative;
+	zoom:1;
+	margin: 0 auto;
+	background-image: url(img/botao/bt_op_meio.jpg);
+}
+.BtOpConteudo a, .BtOpConteudo li{
+float:left;
+display:block;
+white-space:nowrap;
+}
+.BtOpConteudo div a, .BtOpConteudo ul a, .BtOpConteudo ul li{
+float:none;
+}
+.BtOpConteudo ul{
+left:-10000px;
+position:absolute;
+}
+.BtOpConteudo, .BtOpConteudo ul{
+list-style:none;
+padding-left:10px;
+margin:0px;
+}
+.BtOpConteudo li a{
+float:none;
+}
+.BtOpConteudo li{
+	position:relative;
+	left: 20;
+}
+.BtOpConteudo ul{
+z-index:5;
+}
+
+/*botão opçao*/
+#BotaoCadastroOn{
+position:relative;
+float:left;
+margin-left:8px;
+margin-top:-3px;
+width:auto;
+height:auto;
+padding-left:5px;
+font-size:78%;
+font-weight:normal;
+color:#FFF;
+}
+
+
+
+#BotaoCadastroOff{
+position:relative;
+float:left;
+margin-left:5px;
+margin-top:0;
+width:auto;
+height:auto;
+padding-left:5px;
+font-size:78%;
+font-weight:normal;
+color:#FFF;
+}
+
+#divTableCadastro{
+	position:relative;
+	float:left;
+	width:425px;
+}
+
+#divCxAlbumFotos{
+	position:relative;
+	float:left;
+	width:100%;
+	margin-left:100px;
+	margin-top:-120px;
+	
+}
+
+.classh2{
+float:left;
+font-size:78%;
+font-weight:bold;
+color:#fff;
+padding:0;
+}
+
+.classh4{
+float:left;
+font-size:78%;
+color:#fff;
+padding:0;
+}
+
+.classEspaco{
+margin-top:15px;
+}
+
+/***estilos forms***/
+.cssform p{
+font-size:79%;
+width: 300px;
+clear: left;
+margin: 0;
+padding: 5px 0 3px 0px;
+padding-left: 140px; /*tamanho da left column , contendo os labels*/
+}
+
+.cssform label{
+font-size:95%;
+font-weight: normal;
+float: left;
+margin-left: -140px; /*left column*/
+width: 130px; /*tamanho dos labels. tem que ser emnos que a left column(140px) para criar uma margem à direita*/
+}
+
+
+
+.cssform input[type="text"]{ /*tamanho dos textbox. IE6 não entende este atributo*/
+width: 190px;
+height:auto;
+border:1px solid #fff;
+background-color:#9e9e9e;
+padding:2px;
+font-size:95%;
+color:#000000;
+}
+
+.cssform input[type="password"]{ /*tamanho dos password. IE6 não entende este atributo*/
+width: 190px;
+height:auto;
+border:1px solid #fff;
+background-color:#9e9e9e;
+padding:2px;
+font-size:95%;
+color:#000000;
+}
+
+.cssform input[type="radio"]{ /*tamanho dos textbox. IE6 não entende este atributo*/
+width: 30px;
+height:auto;
+padding:10px;
+font-size:95%;
+color:#000000;
+}
+
+.cssform select{ /*tamanho dos select. IE6 não entende este atributo*/
+width: 190px;
+height:auto;
+border:1px solid #fff;
+background-color:#9e9e9e;
+padding:2px;
+font-size:95%;
+color:#000000;
+}
+
+.cssform textarea{
+width: 250px;
+height: 80px;
+border:1px solid #fff;
+background-color:#9e9e9e;
+padding:2px;
+font-size:95%;
+color:#000000;
+}
+
+.cssform2 textarea{
+width: 300px;
+height: 80px;
+border:1px solid #fff;
+background-color:#9e9e9e;
+padding:2px;
+font-size:95%;
+color:#000000;
+}
+
+* html .threepxfix{ /*para ie6 apenas*/
+margin-left: 3px;
+}
+
+
+/**base botao**/
+a.botao{
+background: transparent url(img/BOTAO_BASE_ESQ.gif) no-repeat top left;
+display: block;
+float: left;
+font: normal 12px Arial; 
+line-height: 15px; 
+height: 23px; 
+padding-left: 9px; 
+text-decoration: none;
+cursor: default;
+}
+
+a:link.botao, a:visited.botao, a:active.botao{
+color: #fff; 
+}
+
+a.botao span{
+background: transparent url(img/BOTAO_BASE_DIR.gif) no-repeat top right;
+display: block;
+padding: 4px 9px 4px 0; 
+}
+
+a.botao:hover{ 
+background-position: bottom left;
+}
+
+a.botao:hover span{ 
+background-position: bottom right;
+color: #fff;
+}
+
+.buttonwrapper{ 
+overflow: hidden; 
+width: 100%;
+}
+/***fim base botao***/
+
+#divMaisFotos{
+width:auto;
+height:auto;
+padding:15px;
+}
+#divExcluirMaisFotos{
+	position:absolute;
+	float:left;
+	padding:0;
+	margin:20px;
+	left: 22px;
+	top: 302px;
+}

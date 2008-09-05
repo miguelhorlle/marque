@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+padding: 0px;
+}
+
+/* menu superior - estrutura navegação*/
+.nav-container-outer{
+background: url(img/menusup/meio.gif) repeat-x;
+padding: 0px;
+height: 71px;
+width:510px;
+}
+.float-left{
+float: left;
+}
+.float-right{
+float: right;
+}
+.nav-container .divider{
+display:block;
+font-size:1px;
+border-width:0px;
+border-style:solid;
+}
+.nav-container .divider-vert{
+float:left;
+width:0px;
+display: none;
+}
+.nav-container .item-secondary-title{
+display:block;
+cursor:default;
+white-space:nowrap;
+}
+.clear{
+font-size:1px;
+height:0px;
+width:0px;
+clear:left;
+line-height:0px;
+display:block;
+float:none;
+}
+.nav-container{
+position:relative;
+zoom:1;
+margin: 0 auto;
+}
+.nav-container a, .nav-container li{
+float:left;
+display:block;
+white-space:nowrap;
+}
+.nav-container div a, .nav-container ul a, .nav-container ul li{
+float:none;
+}
+.nav-container ul{
+left:-10000px;
+position:absolute;
+}
+.nav-container, .nav-container ul{
+list-style:none;
+padding:0px;
+margin:0px;
+}
+.nav-container li a{
+float:none;
+}
+.nav-container li{
+position:relative;
+}
+.nav-container ul{
+z-index:5;
+}
+.nav-container ul ul{
+z-index:20;
+}
+.nav-container ul ul ul{
+z-index:30;
+}
+.nav-container ul ul ul ul{
+z-index:40;
+}
+.nav-container ul ul ul ul ul{
+z-index:50;
+}
+li:hover>ul{
+left:auto;
+}
+#nav-container ul {
+top:100%;
+}
+#nav-container ul li:hover>ul{
+top:0px;
+left:100%;
+}
+
+/* Itens principais do menu superior*/	
+#nav-container a{	
+padding:1px 17px 3px 17px;
+margin: 1px 0px 0px 0px;
+color: #FFFFFF;
+font-family: Trebuchet MS, Arial, sans-serif, Helvetica;
+font-size:65%;
+text-decoration:none;
+font-weight: bold;
+}
+
+#nav-container a:hover{
+color: #660000;
+background:url(img/menusup/menusec_superior.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+/*Itens secundários do menu superior*/
+#nav-container div, #nav-container ul{	
+padding:5px 3px 3px 5px;
+margin:0px 0px 0px 10px;
+background: url(img/menusup/item-secondary-container-bg.jpg); /*primeiro item*/
+background-repeat: repeat-x;
+background-color: #b10f0f;/*fundo dos demais itens dos subitens*/
+border-bottom: 1px solid #660000;
+}
+
+/*Subitens do menu superior*/	
+#nav-container div a, #nav-container ul a{	
+padding:3px 10px 3px 3px;
+color: #fff;
+font-size:65%;
+}
+
+/*^'^ Secondary Items Hover State ^'^*/	
+#nav-container div a:hover, #nav-container ul a:hover{	
+/*background-color: #660000;
+background: url(img/menusup/item-secondary-bg.gif);*/
+background-repeat: no-repeat;
+background-position: 0px 7px;
+color:#330000;
+text-decoration:underline;
+}
+
+/*^'^ Secondary Item Titles ^'^	
+#nav-container .item-secondary-title{	
+cursor:default;
+padding:4px 0px 3px 4px;
+color: #330000;
+font-family: Arial, Trebuchet MS, Arial, sans-serif, Helvetica;
+font-size:11px;
+background: url(img/menusup/item-secondary-title-bg.gif); 
+background-repeat: no-repeat;
+font-weight:bold;
+}*/
+
+/*Divisores horixontais*/	
+#nav-container .divider-horiz{	
+border-top-width:1px;
+margin:5px 5px;
+border-color: #993333;
+}
+
+/*Divisores verticais*/	
+#nav-container .divider-vert{	
+border-left-width:1px;
+height:15px;
+margin:2px 2px 0px 2px;
+border-color:#AAAAAA;
+}
